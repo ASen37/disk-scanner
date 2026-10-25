@@ -1,5 +1,9 @@
 # Disk Scanner
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](#环境要求)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](#环境要求)
+
 一个基于 Python 标准库与 tkinter 构建的 Windows 磁盘空间扫描工具。以树形结构展示目录占用，支持逐级展开、按大小分级着色、右键定位与删除，并通过「一次遍历 + 全量索引 + 多线程分块」把大规模目录的统计耗时压到秒级。
 
 > 无第三方依赖，单文件实现，仅需系统自带的 tkinter。
@@ -101,10 +105,11 @@ Windows 的 junction（目录联接）在 Python 中 `DirEntry.is_symlink()` 返
 disk-scanner/
 ├── disk_scan.py     # 单文件主程序：扫描内核 + tkinter 界面 + CLI
 ├── start.bat        # Windows 启动入口
+├── LICENSE          # MIT 许可证
 ├── cache.json       # 运行时生成的扫描缓存（不纳入版本管理）
 └── README.md
 ```
 
 ## 许可证
 
-本项目暂未指定开源许可证。
+本项目基于 [MIT License](LICENSE) 开源，Copyright (c) 2026 ASen37。
